@@ -18,6 +18,10 @@ def fibonacci_sum_naive(n):
 
 def fibonacci_sum_fast(n):
     arr = [0, 1]
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
     for i in range(2, n + 1):
         arr.append(0)
     sum = 1
